@@ -1,0 +1,117 @@
+
+.section_title{
+    margin-top:40px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.projects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    padding-top: 40px;
+}
+.project img{
+ width:100%;
+}
+
+@media only screen and (min-width:200px) and (max-width:576px) {
+
+   .projects{
+    grid-template-columns:repeat(1,1fr);
+   } 
+   .my-blogs {
+       flex-direction: column;
+   }
+}
+.Check_all_project button{
+    padding: 15px 50px;
+    background-color:var(--deep0);
+    margin-top:20px;
+    margin-bottom: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 40px;
+}
+.Check_all_project{
+    display: flex;
+    justify-content: center;
+    /* button center a niye aste */
+}
+
+
+/*....... expertis....... */
+
+.expeprtis_cotainner{
+    margin-top: 30px;
+    /* margin_down:30px; */
+}
+
+.expert_container{
+    padding:30px;
+    background-color: rgb(20, 8, 71);
+    /* border-radius: 10%; */
+}
+
+.write_expert h1{
+ font-size: 30px;
+ font-weight: bolder;
+ padding-top: 20px;
+padding-bottom: 20px;
+margin-bottom: 20px;
+}
+.expert_img{
+    display: flex;
+    justify-content:space-between;
+}
+
+/*.......... blog start........... */
+.tag{
+    background-color:var(--deep6);
+    display:inline-block;
+    /* only button er part ta te white korte */
+    /* width:fit-content; */
+    border-radius: 50px;
+   margin:30px 0px;
+}
+
+.tag h1{
+    color: var(--deep0);
+    font-weight: bolder;
+    padding:20px 20px;
+    border-radius: 50px;
+}
+.my-blogs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.data-name{
+    display: flex;
+    gap:17px;
+}
+
+.data{
+    display:flex;
+    align-items: center;
+   gap:10px;
+   /* gap....margin...padding */
+}
+.round{
+    width:15px;
+    height: 15px;
+    background-color: blueviolet;
+    border-radius: 100%;
+}
+.blog-title{
+    margin: 20px 20px;
+    font-size: 10px;
+}
+.blog-title h1{
+    font-size: 20px;
+}
+
+.blank h1{
+    font-size: 19px;
+}
+
+

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+:root {
+    --deep0: #0e0826;
+    --deep1: #855b3f;
+    --deep2: #b68b68;
+    --deep3: #d8bb9e;
+    --deep4: #daaa89;
+    --deep5: #e7bca3;
+    --deep6: #eecdbd;
+    --deep6: #ffffff;
+    
+    }
+/* globally kichu korte chaile amra * use korbo */
+*{
+    margin: 0;
+    padding:0;
+    font-weight: 400;
+        font-size: 36px;
+        font-family: "Antonio", sans-serif;
+        /* sob gulor opr jate a font use hoy */
+        color: white;
+}
+.container{
+    padding: 20px 60px;
+}
+body{
+    background-color: var(--deep0);
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="header.css"><!--header.css er sathe link korate-->
         <link rel="stylesheet" href="root.css">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="footer.css">
 </head>
 <body class="container">
  <section class="header_container">
@@ -98,6 +99,32 @@
     
 </section>
 
+<!-- <section 
+style="height:100vh;background-color: aqua;margin: 50px; padding:50px ;"
+class="my-expertise">
+<div
+style="
+border:1px solid rgb(255, 255, 255);
+height: 400px;
+width:400px;
+position:relative;
+"
+>
+<div style="width:100%; position:absolute;top:50px;z-index:50">
+<img style="width:100%" src="./Rectangle 39 (1).png"/>
+</div>
+<div style="background-color: rgb(151, 143, 143);position: absolute;height: 200px;width:360px;z-index:20;border-radius: 30px;left:20px;top:23px">
+
+</div>
+
+<div
+    style="background-color: rgb(190, 188, 188);position: absolute;height: 200px;width:320px;z-index:10;border-radius: 30px;left:40px">
+
+</div>
+</div>
+-------------------relative er under a absolute gulo thakbe-------------------- -->
+<!-- </section> -->
+
 <main>
     <section class="project_container">
 
@@ -105,7 +132,7 @@
     <h1>//Projects</h1>
    </div>
 
-    <div class="projects">
+    <div id="projects" class="projects">
         <div class="project">
          <img src="./image 3.png" alt="">
         </div>
@@ -120,7 +147,7 @@
         </div>
     </div>
     <div class="Check_all_project">
-        <button>Check All project</button>
+        <button onclick="handleShowMoreProject()">Check All project</button>
     </div>
     </section>
 
@@ -231,7 +258,107 @@
     
     </section>
 
+    <!-- -------testimonial section start------- -->
+   <section style="height: 100%;margin-top: 80px;">
+   <div class="testimonial">
+    <h1 id="test_id">testimonial</h1>
+    <P id="test_description">this is a paragraph tag.this is a paragraph tag.this is a paragraph tag.this is a paragraph tag<br>.this is a paragraph tag.this is a paragraph tag.this is a paragraph tag</P>
+   </div>
+   <div style="margin-top:80px" class="testimonial-card">
+   <div class="left-side">
+
+<!-- ---------- -->
+
+    <div class="left-side-card-top">
+        <div>
+            <img src="./Rectangle 26.png"  width=100%>
+        </div>
+        <div>
+            <h1 class="test-left-card-title">“Exceptional Service, Outstanding Results!”</h1>
+            <p>Exceptional experience with this team! Their commitment to excellence and creativity surpassed my
+                expectations<br>. From
+                concept to delivery, they turned my vision into a remarkable reality. Highly recommended for outstanding
+                results!</p>
+        </div>
+    </div>
+
+
+<!-- -------------------- -->
+
+
+<div class="left-side-card-top">
+    
+    <div>
+        <h1 class="test-left-card-title">“Exceptional Service, Outstanding Results!”</h1>
+        <p>Exceptional experience with this team! Their commitment to excellence and creativity surpassed my
+            expectations<br>. From
+            concept to delivery, they turned my vision into a remarkable reality. Highly recommended for outstanding
+            results!</p>
+    </div>
+    <div>
+        <img src="./Rectangle 28.png"  width=100%/>
+    </div>
+</div>
+   </div>
+    <div class="right-side">
+    <img src="./Rectangle 31.png" width=100%>
+    <div class="right-h1-p">
+        <h1 class="test-left-card-title">“Exceptional Service, Outstanding Results!”</h1>
+    <p>Exceptional experience with this team! Their commitment to excellence and creativity surpassed my
+        expectations<br>. From
+        concept to delivery, they turned my vision into a remarkable reality. Highly recommended for outstanding
+        results!</p>
+    </div>
+    </div>
+   </div>
+   </section>
+    <!-- -------testimonial section end------- -->
 </main>
+
+<!-- ----------------footer------------------------ -->
+<footer>
+   <section class="footer-container">
+    <div class="left-footer-form">
+        <div class="work">
+            <h1>//WANNA WORK TOGETHER</h1>
+        </div>
+        <form onsubmit="handleContact(event)" class="form">
+        <input class="input" type="text" name="name" placeholder="YOUR NAME" required/>  
+        <input class="input" type="email" name="email" placeholder="YOUR MAIL" required />
+        <input style="margin-top: 40px;" name="massege" class="input" type="text" placeholder="YOUR MESSAGE" required/>
+        <!-- ----------- required===when no input is given give a msg--------- -->
+        <button type="submit" id="send-btn">SEND</button>
+        </form>
+
+    <div style="margin-top:20px" id="sucess_container">
+    <!-- <p>Your Name:</p> -->
+    </div>
+
+    </div>
+    <div class="right-footer-contact">
+        <div class="contact-title">
+            <h1 id="contact-title">OTHER WAY TO CONTACT</h1>
+        </div>
+        <div class="contact-desc">
+            <p>sadiaanjumetu@gmail.com </p>
+            <p>01816748700</p>
+        </div>
+        <div class="social-icon">
+           <a href=""><img src="./Instagram.png"></a>
+        <a href=""><img src="./Facebook.png"></a>
+        <a href=""><img src="./Linkedin.png"></a>
+        <a href=""><img src="./Linkedin.png"></a>
+        </div>
+    </div>
+   </section>
+  <div class="hr-tag">
+    <hr>
+  </div>
+  <h1 style="text-align: center; margin: 25px 0px; padding-bottom: 40px;">© 2023, John Smith. All rights Reserved</h1>
+</footer>
+
+
+<script src="./script.js"></script>
 
 </body>
 </html>
